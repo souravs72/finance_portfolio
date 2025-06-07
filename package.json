@@ -1,4 +1,5 @@
 {
+  "homepage": "https://souravs72.github.io/finance_portfolio/",
   "name": "personal_finance_dashboard",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,7 @@
     "date-fns": "^4.1.0",
     "dotenv": "^16.0.1",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.484.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,6 +30,8 @@
     "tailwindcss-fluid-type": "^2.0.7"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "vite build --sourcemap",
     "serve": "vite preview"
